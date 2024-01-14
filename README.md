@@ -42,44 +42,36 @@
 
 前后端分离的个人博客项目 博客前台
 
-已适配移动端、PC端，适合新手用于学习。
-
 #### 前台
 
 博客前台基于 vue3、element plus、pinia、axios、vue-router、vite、vue-use、npm、scss、tailwind.css 等主流技术
 
-前台线上预览地址：[http://mrzym.top](http://mrzym.top)
+前台线上预览地址：[https://www.beijieblog.cn]()
 
-gitee 仓库地址：[https://gitee.com/mrzym/blog-v3](https://gitee.com/mrzym/blog-v3)
+github 仓库地址: [https://github.com/lhyhyl/blog.git](https://gitee.com/mrzym/blog-v3)
 
 #### 管理后台
 
 博客管理后台基于 pureadmin、vue3、element plus、pinia、axios、vue-router、vue-use、pnpm、vite、sass、tailwindcss 等主流技术
 
-后台线上预览地址：[http://mrzym.top/admin](http://mrzym.top/admin)
+后台线上预览地址：[https://www.beijieblog.cn/admin](http://mrzym.top/admin)
 
-gitee 仓库地址： [https://gitee.com/mrzym/blog-v3-admin](https://gitee.com/mrzym/blog-v3-admin)
-
-测试账户: test
-
-密码: test123
-
-也可以自行注册用户
+github 仓库地址： [https://github.com/lhyhyl/blog-admin](https://gitee.com/mrzym/blog-v3-admin)
 
 #### 后端
 
 博客后端基于node.js、koa、koa-router、koa-body、seqlize、mysql、qiniu(七牛云对象存储)、bcryptjs、nodemon等主流技术
 
-gitee仓库地址：[https://gitee.com/mrzym/blogServer](https://gitee.com/mrzym/blogServer)
+gitee仓库地址：[https://github.com/lhyhyl/blog-server](https://gitee.com/mrzym/blogServer)
 
 ## 🚀 博客前台下载运行
 
 ```git
-# pnpm 版本 v7.27.0
-# node 版本 v18.17.0
+# pnpm 版本 v8.14.0
+# node 版本 v21.5.0
 
 1、下载项目
-git clone https://gitee.com/mrzym/blog-v3.git
+git clone https://github.com/lhyhyl/blog.git
 tips: 也可以下载zip打开，这样不会和我的仓库关联，也可以自己去解除关联
 2、打开项目，安装依赖（安装依赖报错可以降低自己的npm版本或者网上百度解决方法，一般情况下不会有问题）
 pnpm i
@@ -113,15 +105,3 @@ pnpm run serve
 #### 功能开发
 
 目前的功能是满足个人使用的，如果有更好玩的功能，可以推荐给我哦
-
-## 🌈部署
-
-博客文章会出一系列的部署教程
-
-教程地址：[http://mrzym.top/#/articleList?id=2&amp;type=category&amp;name=%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2](http://mrzym.top/#/articleList?id=2&type=category&name=%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2)
-
-## 🥰感谢
-
-感谢我所使用的这些技术框架的开发者、维护者，每一个框架、库的开发，都需要长时间的技术沉淀，充分的思考与不断地踩坑。维护开源库所需要花费的时间和精力更是常人所难以想象的。
-
-如果大家喜欢这个项目的话，麻烦大家点个star、fork，你们的鼓励是我最大的动力。
