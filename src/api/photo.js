@@ -1,9 +1,9 @@
 import http from "@/config/request";
 
 /** 获取所有的相册 */
-export const getAllAlbum = () => {
+export const getAllAlbum = (userId) => {
   return new Promise((resolve, reject) => {
-    http.get("/api/photoAlbum/getAllAlbumList", {}).then((res) => {
+    http.post("/api/photoAlbum/getAllAlbumList", {userId: userId}).then((res) => {
       resolve(res);
     });
   });

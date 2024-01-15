@@ -4,7 +4,10 @@ import { useRouter } from "vue-router";
 import { getAllAlbum } from "@/api/photo";
 
 import SkeletonItem from "@/components/SkeletonItem/skeleton-item.vue";
-
+import { storeToRefs } from "pinia";
+import { user } from "@/store/index";
+const userStore = user();
+const { getUserInfo } = storeToRefs(userStore);
 const albumList = ref([]);
 const loading = ref(false);
 
@@ -18,7 +21,7 @@ const goToPhotos = (item) => {
 
 const getAll = async () => {
   loading.value = true;
-  let res = await getAllAlbum();
+  let res = await getAllAlbum(getUserInfo.value.id);
   if (res.code == 0) {
     albumList.value = res.result;
     loading.value = false;
