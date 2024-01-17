@@ -6,7 +6,10 @@ import { getAllAlbum } from "@/api/photo";
 
 import PageHeader from "@/components/Header/PageHeader.vue";
 import SkeletonItem from "@/components/SkeletonItem/skeleton-item.vue";
-
+import { storeToRefs } from "pinia";
+import { user } from "@/store/index";
+const userStore = user();
+const { getUserInfo } = storeToRefs(userStore);
 const route = useRoute();
 const photoList = ref([]);
 const photoAlbumList = ref([]);
@@ -22,7 +25,7 @@ const pageGetPhotos = async (id) => {
 };
 
 const getAll = async (id) => {
-  let res = await getAllAlbum();
+  let res = await getAllAlbum(getUserInfo.value.id);
   if (res.code == 0) {
     photoAlbumList.value = res.result;
     pageGetPhotos(Number(id));
