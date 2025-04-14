@@ -50,20 +50,6 @@
 
 github 仓库地址: [https://github.com/lhyhyl/blog.git](https://gitee.com/mrzym/blog-v3)
 
-#### 管理后台
-
-博客管理后台基于 pureadmin、vue3、element plus、pinia、axios、vue-router、vue-use、pnpm、vite、sass、tailwindcss 等主流技术
-
-后台线上预览地址：[https://www.beijieblog.cn/admin](http://mrzym.top/admin)
-
-github 仓库地址： [https://github.com/lhyhyl/blog-admin](https://gitee.com/mrzym/blog-v3-admin)
-
-#### 后端
-
-博客后端基于node.js、koa、koa-router、koa-body、seqlize、mysql、qiniu(七牛云对象存储)、bcryptjs、nodemon等主流技术
-
-gitee仓库地址：[https://github.com/lhyhyl/blog-server](https://gitee.com/mrzym/blogServer)
-
 ## 🚀 博客前台下载运行
 
 ```git
